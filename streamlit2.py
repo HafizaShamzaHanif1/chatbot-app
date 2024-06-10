@@ -2,6 +2,12 @@
 import streamlit as st
 import os
 import google.generativeai as ggi
+
+# Load environment variables
+# load_dotenv(".env")
+
+# Fetch the API key from the environment variables
+# Ensure you securely manage and store your API keys
 fetched_api_key = "AIzaSyDp17AjWrSCKyr35QYfIt6c2lZVHRJwyvY"  # Use os.getenv to fetch the API key
 
 # Check if the API key was successfully fetched
@@ -39,11 +45,14 @@ def LLM_Response(question):
 st.markdown("""
     <style>
     .main {
-        background: linear-gradient(270deg, #200550, #005c4b);
+        background-image: url("https://cdn.wallpapersafari.com/0/62/TA4eir.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         padding: 20px;
     }
     .stButton button {
-        background-color: #200550;
+        background-color: #4CAF50;
         color: white;
         border-radius: 10px;
         padding: 10px 20px;
